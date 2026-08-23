@@ -1,12 +1,239 @@
-﻿<Window x:Class="BudgetFlow.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BudgetFlow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="BudgetFlow.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+          Style="{StaticResource MaterialDesignWindow}"
+        Title="BudgetFlow" Height="700" Width="1000" WindowStyle="None">
+    <Window.Resources>
+        <Style TargetType="Button" BasedOn="{StaticResource MaterialDesignFlatButton}">
+            <Setter Property="Background" Value="Yellow"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+    </Window.Resources>
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0" Background="#FF121E33" >
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="8*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left">
+                <Image Source="files/logo.png" Width="50" Height="50" Margin="10"/>
+                <TextBlock Text="BudgetFlow" FontSize="24" Foreground="White" VerticalAlignment="Center" Margin="10"/>
+            </StackPanel>
+            <Button HorizontalAlignment="Right" Content="&#xE700;" FontFamily="Segoe MDL2 Assets" FontSize="24" Foreground="White" Background="Transparent" BorderBrush="Transparent" Margin="10"/>
+
+
+
+
+            <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Height="527" Width="224">
+                <Button Content="Tableau de bord" Style="{StaticResource MaterialDesignFlatButton}" Margin="5" Width="150" Foreground="White"/>
+                <Button Content="Transactions" Style="{StaticResource MaterialDesignFlatButton}" Margin="5" Width="150" Foreground="White"/>
+                <Button Content="Revenues" Style="{StaticResource MaterialDesignFlatButton}" Margin="5" Width="150" Foreground="White"/>
+                <Button Content="Dépenses" Style="{StaticResource MaterialDesignFlatButton}" Margin="5" Width="150" Foreground="White"/>
+                <Button Content="Catégories" Style="{StaticResource MaterialDesignFlatButton}" Margin="5" Width="150" Foreground="White"/>
+                <Button Content="Statistiques" Style="{StaticResource MaterialDesignFlatButton}" Margin="5" Width="150" Foreground="White"/>
+                <Button Content="Rapports" Style="{StaticResource MaterialDesignFlatButton}" Margin="5" Width="150" Foreground="White"/>
+                <Button Content="Paramètres" Style="{StaticResource MaterialDesignFlatButton}" Margin="5" Width="150" Foreground="White"/>
+            </StackPanel>
+
+            <TextBlock Grid.Row="2" Text="© 2026 BudgetFlow. All rights reserved." Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10"/>
+
+
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="&#xE700;" FontFamily="Segoe MDL2 Assets" FontSize="16" Foreground="Black" Background="Transparent" BorderBrush="Transparent" Margin="5"/>
+                <Button Content="๱" FontFamily="Segoe MDL2 Assets" FontSize="16" Foreground="Black" Background="Transparent" BorderBrush="Transparent" Margin="5"/>
+                <Button Content="&#xE711;" FontFamily="Segoe MDL2 Assets" FontSize="16" Foreground="Black" Background="Transparent" BorderBrush="Transparent" Margin="5"/>
+            </StackPanel>
+            <TextBlock Grid.Row="1" Text="Tableau de bord" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                
+                <materialDesign:Card Grid.Column="0" Margin="10" Padding="15">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="Revenus totaux" FontSize="14" FontWeight="Bold" Foreground="Green"/>
+                            <TextBlock Text="5 000 €" FontSize="24" FontWeight="SemiBold" Margin="0,8,0,0"/>
+                            <TextBlock Text="↑ +12,5 % ce mois" FontSize="12" Foreground="Green" Margin="0,8,0,0"/>
+                        </StackPanel>
+                        <!-- Ici viendra l'icône -->
+                    </Grid>
+                </materialDesign:Card>
+
+                <materialDesign:Card Grid.Column="1" Margin="10" Padding="15">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="Soldes" FontSize="14" FontWeight="Bold" Foreground="Red"/>
+                            <TextBlock Text="3 000 €" FontSize="24" FontWeight="SemiBold" Margin="0,8,0,0"/>
+                            <TextBlock Text="↓ -5,2 % ce mois" FontSize="12" Foreground="Red" Margin="0,8,0,0"/>
+                        </StackPanel>
+                        <!-- Ici viendra l'icône -->
+                    </Grid>
+                </materialDesign:Card>
+
+                <materialDesign:Card Grid.Column="2" Margin="10" Padding="15">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="Soldes" FontSize="14" FontWeight="Bold" Foreground="Blue"/>
+                            <TextBlock Text="2 000 €" FontSize="24" FontWeight="SemiBold" Margin="0,8,0,0"/>
+                            <TextBlock Text="↑ +12,5 % ce mois" FontSize="12" Foreground="Blue" Margin="0,8,0,0"/>
+                        </StackPanel>
+                        <!-- Ici viendra l'icône -->
+                    </Grid>
+                </materialDesign:Card>
+                <materialDesign:Card Grid.Column="3" Margin="10" Padding="15">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="Transactions" FontSize="14" FontWeight="Bold"/>
+                            <TextBlock Text="25" FontSize="24" FontWeight="SemiBold" Margin="0,8,0,0"/>
+                            <TextBlock Text="↑ +12,5 % ce mois" FontSize="12" Foreground="Red" Margin="0,8,0,0"/>
+                        </StackPanel>
+                        <!-- Ici viendra l'icône -->
+                    </Grid>
+                </materialDesign:Card>
+
+            </Grid>
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <materialDesign:Card Grid.Column="0" Margin="10" Padding="15">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Évolution du solde"></TextBlock>
+                            <TextBlock Grid.Column="1" Text="..." HorizontalAlignment="Right"  ></TextBlock>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <!--Graphe-->
+                        </Grid>
+                    </Grid>
+                </materialDesign:Card>
+
+                <materialDesign:Card Grid.Column="1" Margin="10" Padding="15">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Répartition des dépenses"></TextBlock>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <!--Graphe-->
+                        </Grid>
+                    </Grid>
+                </materialDesign:Card>
+
+            </Grid>
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <materialDesign:Card Grid.Column="0" Margin="10" Padding="15">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Dernières transactions"></TextBlock>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <!--Donnees-->
+                        </Grid>
+                    </Grid>
+                </materialDesign:Card>
+
+                <materialDesign:Card Grid.Column="1" Margin="10" Padding="15">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Résumé du mois"></TextBlock>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <!--Donnees-->
+                        </Grid>
+                    </Grid>
+                </materialDesign:Card>
+
+            </Grid>
+
+        </Grid>
+
 
     </Grid>
 </Window>
