@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gameh\\OneDrive\\Desktop\\BudgetFlow\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{478AD13F-A67D-F338-0D52-B1FAE8DD11D5}|BudgetFlow\\BudgetFlow.csproj|c:\\users\\gameh\\onedrive\\desktop\\budgetflow\\budgetflow\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{478AD13F-A67D-F338-0D52-B1FAE8DD11D5}|BudgetFlow\\BudgetFlow.csproj|solutionrelative:budgetflow\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{478AD13F-A67D-F338-0D52-B1FAE8DD11D5}|BudgetFlow\\BudgetFlow.csproj|c:\\users\\gameh\\onedrive\\desktop\\budgetflow\\budgetflow\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{478AD13F-A67D-F338-0D52-B1FAE8DD11D5}|BudgetFlow\\BudgetFlow.csproj|solutionrelative:budgetflow\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{478AD13F-A67D-F338-0D52-B1FAE8DD11D5}|BudgetFlow\\BudgetFlow.csproj|c:\\users\\gameh\\onedrive\\desktop\\budgetflow\\budgetflow\\models\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{478AD13F-A67D-F338-0D52-B1FAE8DD11D5}|BudgetFlow\\BudgetFlow.csproj|solutionrelative:budgetflow\\models\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{478AD13F-A67D-F338-0D52-B1FAE8DD11D5}|BudgetFlow\\BudgetFlow.csproj|c:\\users\\gameh\\onedrive\\desktop\\budgetflow\\budgetflow\\views\\incomeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{478AD13F-A67D-F338-0D52-B1FAE8DD11D5}|BudgetFlow\\BudgetFlow.csproj|solutionrelative:budgetflow\\views\\incomeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{478AD13F-A67D-F338-0D52-B1FAE8DD11D5}|BudgetFlow\\BudgetFlow.csproj|c:\\users\\gameh\\onedrive\\desktop\\budgetflow\\budgetflow\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{478AD13F-A67D-F338-0D52-B1FAE8DD11D5}|BudgetFlow\\BudgetFlow.csproj|solutionrelative:budgetflow\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Income.cs",
+              "DocumentMoniker": "C:\\Users\\gameh\\OneDrive\\Desktop\\BudgetFlow\\BudgetFlow\\Models\\Income.cs",
+              "RelativeDocumentMoniker": "BudgetFlow\\Models\\Income.cs",
+              "ToolTip": "C:\\Users\\gameh\\OneDrive\\Desktop\\BudgetFlow\\BudgetFlow\\Models\\Income.cs",
+              "RelativeToolTip": "BudgetFlow\\Models\\Income.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T22:42:51.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IncomeView.xaml",
+              "DocumentMoniker": "C:\\Users\\gameh\\OneDrive\\Desktop\\BudgetFlow\\BudgetFlow\\Views\\IncomeView.xaml",
+              "RelativeDocumentMoniker": "BudgetFlow\\Views\\IncomeView.xaml",
+              "ToolTip": "C:\\Users\\gameh\\OneDrive\\Desktop\\BudgetFlow\\BudgetFlow\\Views\\IncomeView.xaml",
+              "RelativeToolTip": "BudgetFlow\\Views\\IncomeView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-23T17:27:34.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DashboardViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\gameh\\OneDrive\\Desktop\\BudgetFlow\\BudgetFlow\\ViewModels\\DashboardViewModel.cs",
+              "RelativeDocumentMoniker": "BudgetFlow\\ViewModels\\DashboardViewModel.cs",
+              "ToolTip": "C:\\Users\\gameh\\OneDrive\\Desktop\\BudgetFlow\\BudgetFlow\\ViewModels\\DashboardViewModel.cs",
+              "RelativeToolTip": "BudgetFlow\\ViewModels\\DashboardViewModel.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAABQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T02:50:14.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\gameh\\OneDrive\\Desktop\\BudgetFlow\\BudgetFlow\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "BudgetFlow\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\gameh\\OneDrive\\Desktop\\BudgetFlow\\BudgetFlow\\MainWindow.xaml",
+              "RelativeToolTip": "BudgetFlow\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-20T02:17:53.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\gameh\\OneDrive\\Desktop\\BudgetFlow\\BudgetFlow\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "BudgetFlow\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\gameh\\OneDrive\\Desktop\\BudgetFlow\\BudgetFlow\\MainWindow.xaml.cs",
+              "RelativeToolTip": "BudgetFlow\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T02:17:52.812Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

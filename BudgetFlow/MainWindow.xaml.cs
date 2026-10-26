@@ -1,24 +1,34 @@
-﻿using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using BudgetFlow.ViewModels;
 
-namespace BudgetFlow
+namespace BudgetFlow;
+
+public partial class MainWindow : Window
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    public MainWindow()
     {
-        public MainWindow()
+        InitializeComponent();
+        // Tous les Binding de la fenêtre héritent de cette source de données.
+        DataContext = new DashboardViewModel();
+        StateChanged += (_, _) =>
         {
-            InitializeComponent();
-        }
+            MaximizeButton.Content = WindowState == WindowState.Maximized ? "\uE923" : "\uE922";
+            // Laisser visibles les bords de la fenêtre lorsqu'elle est maximisée.
+            MainWindowContent.Margin = WindowState == WindowState.Maximized
+                ? new Thickness(8) : new Thickness(0);
+        };
     }
+
+    // Ces actions concernent uniquement la fenêtre : elles restent dans la vue.
+    private void Minimize_Click(object sender, RoutedEventArgs e) => SystemCommands.MinimizeWindow(this);
+
+    private void Maximize_Click(object sender, RoutedEventArgs e)
+    {
+        if (WindowState == WindowState.Maximized)
+            SystemCommands.RestoreWindow(this);
+        else
+            SystemCommands.MaximizeWindow(this);
+    }
+
+    private void Close_Click(object sender, RoutedEventArgs e) => SystemCommands.CloseWindow(this);
 }
